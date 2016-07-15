@@ -107,7 +107,7 @@ tslib: libts-1.0/Makefile
 
 # sdl
 SDL-1.2.15/Makefile:
-	cd SDL-1.2.15; ./configure  ${ENABLE_PROFILING} --host=${HOST} --target=${TARGET} --prefix=${PREFIX} --enable-audio=no --enable-video --enable-events --enable-joystick=no --enable-cdrom=no --enable-threads --enable-timers --enable-file --enable-loadso --enable-esd=no --enable-arts=no --enable-esd-shared=no --enable-clock_gettime --enable-video-x11=no --enable-video-opengl=no --enable-video-dummy=no --enable-video-directfb=no --enable-input-tslib=yes
+	cd SDL-1.2.15; ./configure  ${ENABLE_PROFILING} --host=${HOST} --target=${TARGET} --prefix=${PREFIX} --enable-audio=no --enable-video --enable-events --enable-joystick=no --enable-cdrom=no --enable-threads --enable-timers --enable-file --enable-loadso --enable-esd=no --enable-arts=no --enable-esd-shared=no --enable-clock_gettime --enable-video-x11=yes --enable-video-opengl=no --enable-video-dummy=no --enable-video-directfb=no --enable-input-tslib=yes
 
 sdl: SDL-1.2.15/Makefile
 	cd SDL-1.2.15; make && make install
